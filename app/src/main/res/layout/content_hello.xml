@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.appdev.ankitakarandikar.hello.Hello"
+    tools:showIn="@layout/activity_hello">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/Hello"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/Bill_Amount_View" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ENTER BILL AMOUNT"
+        android:id="@+id/Bill_Amount_View"
+        android:layout_below="@+id/Hello"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/Bill_Amount"
+        android:layout_alignTop="@+id/Bill_Amount_View"
+        android:layout_toEndOf="@+id/Bill_Amount_View"
+        android:layout_marginStart="38dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE TIP"
+        android:id="@+id/Tip_Calculator"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/Bill_Amount"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
